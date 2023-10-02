@@ -1,18 +1,28 @@
 h1 {
     text-align: center;
+    color : white;
 }
 h2{
     text-align: center;
+    color : white;
 }
 .ph1{
     text-align: center;
 }
-.btnh1 button{
+.btnh1{
     text-align: center;
+    color:black;
 }
 .btns2{
     text-align: center;
+    color:black;
 }
 .uls3 li{
     text-align: center;
+}
+main{
+    background-color: #0A1117;
+}
+article{
+    color : white;
 }
