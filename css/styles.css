@@ -1,31 +1,47 @@
+:root {
+    --h-text-color:white;
+    --button-color:#FFCF01;
+    --button-text-color: black;
+    --background-color:#0A1117;
+    font-size: 62.5%;
+}
+
+body{
+    color:var(--h-text-color);
+    font-size: 3.6rem;
+    background-color: var(--background-color);
+}
+
 h1 {
     text-align: center;
-    color : white;
+    color :var(--h-text-color);
 }
 h2{
     text-align: center;
-    color : white;
+    color :var(--h-text-color);
 }
 .ph1{
     text-align: center;
 }
 .btnh1{
     text-align: center;
-    color:black;
-    background-color:#FFCF01;
+    color:var(--button-text-color);
+    background-color: var(--button-color);
+    display: block;
+    margin-inline: auto;
 }
 .btns2{
     text-align: center;
-    color:black;
-    background-color:#FFCF01;
+    color:var(--button-text-color);
+    background-color: var(--button-color);
+    display: block;
+    margin-inline: auto;
     
 }
 .uls3 li{
     text-align: center;
 }
-main{
-    background-color: #0A1117;
-}
+
 article{
-    color : white;
+    color : var(--h-text-color);
 }
