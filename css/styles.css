@@ -1,47 +1,95 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/open-sans-v36-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v36-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v36-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
-    --h-text-color:white;
-    --button-color:#FFCF01;
+    --h-text-color: white;
+    --button-color: #FFCF01;
     --button-text-color: black;
-    --background-color:#0A1117;
+    --background-color: #0A1117;
     font-size: 62.5%;
 }
 
-body{
-    color:var(--h-text-color);
+body {
+    color: var(--h-text-color);
     font-size: 3.6rem;
     background-color: var(--background-color);
+    font-family: OpenSans, sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: OpenSans, sans-serif;
+    font-weight: 600;
+
 }
 
 h1 {
     text-align: center;
-    color :var(--h-text-color);
+    color: var(--h-text-color);
 }
-h2{
+
+h2 {
     text-align: center;
-    color :var(--h-text-color);
+    color: var(--h-text-color);
 }
-.ph1{
+
+.ph1 {
     text-align: center;
+    font-family: OpenSans, sans-serif;
+    font-weight: 500;
 }
-.btnh1{
+
+.btnh1 {
     text-align: center;
-    color:var(--button-text-color);
+    color: var(--button-text-color);
     background-color: var(--button-color);
     display: block;
     margin-inline: auto;
 }
-.btns2{
+
+.btns2 {
     text-align: center;
-    color:var(--button-text-color);
+    color: var(--button-text-color);
     background-color: var(--button-color);
     display: block;
     margin-inline: auto;
-    
+
 }
-.uls3 li{
+
+.uls3 li {
+
+    list-style: none;
     text-align: center;
 }
 
-article{
-    color : var(--h-text-color);
+.uls3 {
+    padding: 0;
+}
+
+article {
+    color: var(--h-text-color);
 }
