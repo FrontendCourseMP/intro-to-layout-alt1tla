@@ -4,7 +4,6 @@
     font-style: normal;
     font-weight: 500;
     src: url('../fonts/open-sans-v36-latin-500.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
@@ -13,7 +12,6 @@
     font-style: normal;
     font-weight: 600;
     src: url('../fonts/open-sans-v36-latin-600.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
@@ -22,7 +20,6 @@
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/open-sans-v36-latin-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 :root {
@@ -71,13 +68,15 @@ h2 {
     margin-inline: auto;
 }
 
+.as2{
+    text-align: center;
+}
+
 .btns2 {
     text-align: center;
     color: var(--button-text-color);
     background-color: var(--button-color);
-    display: block;
     margin-inline: auto;
-
 }
 
 .uls3 li {
