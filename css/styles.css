@@ -69,6 +69,11 @@ h2 {
     display: block;
     margin-inline: auto;
     font-size: 1.5rem;
+    border-radius: 1.2rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 .as2 {
@@ -77,9 +82,11 @@ h2 {
 
 .btns2 {
     text-align: center;
-    color: var(--button-text-color);
+    color: #0A1117;
     background-color: var(--button-color);
     margin-inline: auto;
+
+
 }
 
 .uls3 li {
@@ -94,60 +101,85 @@ h2 {
 article {
     color: var(--h-text-color);
 }
-.burger_menu{
-    color:#FFA903;
+
+.burger_menu {
+    color: #FFA903;
     background-color: var(--background-color);
 }
-.cardp{
+
+.cardp {
     border-radius: 2rem;
     border: 0.2rem solid #2A3744;
     background-color: #121E28;
     text-align: center;
 }
-.card h3{
+
+.card h3 {
     font-size: 1.8rem;
 }
-.card p{
+
+.card p {
     font-size: 1.3rem;
 }
-.card1{
+
+.card1 {
     border-radius: 2rem;
     background: #77E6FF;
     text-align: center;
+    color: #10151A;
 }
-.card2{
+
+.card2 {
     border-radius: 2rem;
     background: #E2C1F9;
     text-align: center;
+    color: #10151A;
 }
-.card3{
+
+.card3 {
     border-radius: 2rem;
     background: #DBE268;
     text-align: center;
+    color: #10151A;
 }
-.btnpodcast{
+
+.btnpodcast {
     font-size: 1.2rem;
 }
 
-.cardp h3{
+.cardp h3 {
     font-size: 1.7rem;
 }
-.cardp p{
+
+.cardp p {
     font-size: 1.4rem;
 }
-.btnseeall{
+
+.btnseeall {
     font-size: 1.8rem;
 }
-.btnpress{
+
+.btnpress {
     font-size: 1.4rem;
 }
-.form{
+
+.form {
     border-radius: 2.2rem;
     border: 0.1rem solid #2A3744;
     background: #14212D;
     text-align: center;
 }
-.submit{
+
+.form p {
+    color: #9AAFC3;
+}
+
+.submit {
     border-radius: 1rem;
-    background-color:#E2C1F9;
+    background-color: #E2C1F9;
+    color: #10151A;
+}
+
+footer {
+    background-color: #121E28;
 }
