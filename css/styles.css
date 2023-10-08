@@ -32,7 +32,7 @@
 
 body {
     color: var(--h-text-color);
-    font-size: 3.6rem;
+    font-size: 1.8rem;
     background-color: var(--background-color);
     font-family: OpenSans, sans-serif;
     font-weight: 700;
@@ -47,11 +47,13 @@ p {
 h1 {
     text-align: center;
     color: var(--h-text-color);
+    font-size: 3.6rem;
 }
 
 h2 {
     text-align: center;
     color: var(--h-text-color);
+    font-size: 2.8rem;
 }
 
 .ph1 {
@@ -66,9 +68,10 @@ h2 {
     background-color: var(--button-color);
     display: block;
     margin-inline: auto;
+    font-size: 1.5rem;
 }
 
-.as2{
+.as2 {
     text-align: center;
 }
 
@@ -80,7 +83,6 @@ h2 {
 }
 
 .uls3 li {
-
     list-style: none;
     text-align: center;
 }
@@ -92,4 +94,60 @@ h2 {
 article {
     color: var(--h-text-color);
 }
+.burger_menu{
+    color:#FFA903;
+    background-color: var(--background-color);
+}
+.cardp{
+    border-radius: 2rem;
+    border: 0.2rem solid #2A3744;
+    background-color: #121E28;
+    text-align: center;
+}
+.card h3{
+    font-size: 1.8rem;
+}
+.card p{
+    font-size: 1.3rem;
+}
+.card1{
+    border-radius: 2rem;
+    background: #77E6FF;
+    text-align: center;
+}
+.card2{
+    border-radius: 2rem;
+    background: #E2C1F9;
+    text-align: center;
+}
+.card3{
+    border-radius: 2rem;
+    background: #DBE268;
+    text-align: center;
+}
+.btnpodcast{
+    font-size: 1.2rem;
+}
 
+.cardp h3{
+    font-size: 1.7rem;
+}
+.cardp p{
+    font-size: 1.4rem;
+}
+.btnseeall{
+    font-size: 1.8rem;
+}
+.btnpress{
+    font-size: 1.4rem;
+}
+.form{
+    border-radius: 2.2rem;
+    border: 0.1rem solid #2A3744;
+    background: #14212D;
+    text-align: center;
+}
+.submit{
+    border-radius: 1rem;
+    background-color:#E2C1F9;
+}
