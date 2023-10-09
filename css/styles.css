@@ -87,8 +87,8 @@ a {
     margin-inline: auto;
     border-radius: 10rem;
     border: 0.3rem solid #0A1117;
-    
-    
+
+
 }
 
 .uls3 li {
@@ -100,10 +100,12 @@ a {
 .uls3 {
     padding: 0;
 }
-.uls3 a{
+
+.uls3 a {
     color: #37424D;
 }
-.uls3 a:hover{
+
+.uls3 a:hover {
     color: #23C9DE;
 }
 
@@ -195,91 +197,111 @@ article {
 footer {
     background-color: #121E28;
 }
-.DAOul li{
+
+.DAOul li {
     font-weight: 600;
     font-size: 1.4rem;
     list-style: none;
     text-align: center;
 }
-.DAOul{
+
+.DAOul {
     padding: 0;
 }
-.DAOul a{
+
+.DAOul a {
     color: #FFB4D3;
 }
-.uls4{
-    padding:0;
+
+.uls4 {
+    padding: 0;
 }
-.uls4 li{
+
+.uls4 li {
     font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
     list-style: none;
 }
-.uls4 button{
+
+.uls4 button {
     color: #8395A7;
     background-color: var(--background-color);
     border: none;
 
 }
-.uls4 button:hover{
-    color:#FFC803;
+
+.uls4 button:hover {
+    color: #FFC803;
 }
-.btnwatch{
+
+.btnwatch {
     text-align: center;
 }
-.btnwatch a{
+
+.btnwatch a {
     background: rgba(255, 207, 1, 0.15);
     color: #FFCF01;
     border-radius: 0.8rem;
     margin-inline: auto;
 }
-.uls5{
+
+.uls5 {
     padding: 0;
 }
-.uls5 li{
+
+.uls5 li {
     text-align: center;
     list-style: none;
     font-size: 1.2rem;
     font-weight: 600;
 }
-.uls5 a{
+
+.uls5 a {
     color: #FFF;
-    
+
 }
-.uls6{
-    padding:0;
+
+.uls6 {
+    padding: 0;
 }
-.uls6 li{
+
+.uls6 li {
     list-style: none;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 700;
     color: #FFF;
 }
-footer .ul1{
+
+footer .ul1 {
     list-style: none;
     text-align: center;
     padding: 0;
     font-size: 1.4rem;
     font-weight: 600;
 }
-footer .ul1 li{
+
+footer .ul1 li {
     display: inline-block;
 }
-footer .ul1 li a{
+
+footer .ul1 li a {
     color: #FFF;
 }
-footer .ul2{
+
+footer .ul2 {
     list-style: none;
     text-align: center;
     padding: 0;
     font-size: 1.4rem;
     font-weight: 600;
 }
-footer .ul2 li{
+
+footer .ul2 li {
     display: inline-block;
 }
-footer .ul2 li a{
+
+footer .ul2 li a {
     color: #FFF;
 }
