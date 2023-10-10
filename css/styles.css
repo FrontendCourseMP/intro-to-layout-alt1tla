@@ -24,7 +24,8 @@
 
 .wrapper{
     width: 100%; 
-    max-width: 70rem / 65ch - удобоворимое кол-во символов на строке;
+    max-width: 70rem;
+     /* 65ch - удобоворимое кол-во символов на строке; */ 
     margin: 0 auto;
     padding : 0 1rem;
 }
