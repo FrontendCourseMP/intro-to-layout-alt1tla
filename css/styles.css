@@ -37,7 +37,9 @@ body {
     font-family: OpenSans, sans-serif;
     font-weight: 700;
 }
-
+button{
+    font-family: OpenSans, sans-serif;
+}
 p {
     font-family: OpenSans, sans-serif;
     font-weight: 600;
@@ -74,6 +76,7 @@ h2 {
 
 a {
     text-decoration: none;
+    font-family: OpenSans, sans-serif;
 }
 
 .as2 {
@@ -158,6 +161,7 @@ article {
 
 .btnpodcast {
     font-size: 1.2rem;
+    color: #FFF;
 }
 
 .cardp h3 {
@@ -175,6 +179,7 @@ article {
 
 .btnpress {
     font-size: 1.4rem;
+    color: #10151A;
 }
 
 .form {
@@ -209,10 +214,21 @@ footer {
     padding: 0;
 }
 
-.DAOul a {
+.pink a{
     color: #FFB4D3;
 }
-
+.yellow a{
+    color: #FFC24C;
+}
+.purpul a{
+    color: #D387F7;
+}
+.blue a{
+    color: #77E6FF;
+}
+.grey a{
+    color: #707F8D;
+}
 .uls4 {
     padding: 0;
 }
