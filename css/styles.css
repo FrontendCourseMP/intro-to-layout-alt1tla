@@ -41,16 +41,16 @@ body {
     color: var(--h-text-color);
     font-size: 1.8rem;
     background-color: var(--background-color);
-    font-family: OpenSans, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
 button{
-    font-family: OpenSans, sans-serif;
+    /* font-family: OpenSans, sans-serif; */
     min-width: 3rem;
     max-width: 30rem;
 }
 p {
-    font-family: OpenSans, sans-serif;
+    /* font-family: OpenSans, sans-serif; */
     font-weight: 600;
 
 }
@@ -69,7 +69,7 @@ h2 {
 
 .ph1 {
     text-align: center;
-    font-family: OpenSans, sans-serif;
+    /* font-family: OpenSans, sans-serif; */
     font-weight: 500;
 }
 
@@ -329,4 +329,8 @@ footer .ul2 li {
 
 footer .ul2 li a {
     color: #FFF;
+}
+header{
+    background-color: var(--background-color);
+    /* position: fixed; */
 }
