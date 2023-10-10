@@ -21,6 +21,13 @@
     font-weight: 700;
     src: url('../fonts/open-sans-v36-latin-700.woff2') format('woff2');
 }
+/* 
+.wrapper{
+    width: 100%; 
+    max-width: 70rem / 65ch - удобоворимое кол-во символов на строке;
+    margin: 0 auto;
+    padding : 0 1rem;
+} */
 
 :root {
     --h-text-color: #FFF;
@@ -39,6 +46,8 @@ body {
 }
 button{
     font-family: OpenSans, sans-serif;
+    min-width: 3rem;
+    max-width: 30rem;
 }
 p {
     font-family: OpenSans, sans-serif;
