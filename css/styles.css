@@ -1,3 +1,5 @@
+/* fonts */
+
 @font-face {
     font-display: swap;
     font-family: 'Open Sans';
@@ -22,12 +24,14 @@
     src: url('../fonts/open-sans-v36-latin-700.woff2') format('woff2');
 }
 
-.wrapper{
-    width: 100%; 
+/* body */
+
+.wrapper {
+    width: 100%;
     max-width: 70rem;
-     /* 65ch - удобоворимое кол-во символов на строке; */ 
+    /* 65ch - удобоворимое кол-во символов на строке; */
     margin: 0 auto;
-    padding : 0 1rem;
+    padding: 0 1rem;
 }
 
 :root {
@@ -45,12 +49,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
-button{
-    min-width: 3rem;
-    max-width: 30rem;
+
+header {
+    background-color: var(--background-color);
 }
-p {
-    font-weight: 600;
+
+article {
+    color: var(--h-text-color);
 }
 
 h1 {
@@ -65,12 +70,42 @@ h2 {
     font-size: 2.8rem;
 }
 
-.ph1 {
+
+p {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    min-width: 3rem;
+    max-width: 30rem;
+}
+
+footer {
+    background-color: #121E28;
+}
+
+/* sections */
+
+.header-btn-bm {
+    color: #FFA903;
+    background-color: var(--background-color);
+    border: none;
+}
+
+.welcomepage {
+    padding: 0;
+}
+
+.welcomepage-p {
     text-align: center;
     font-weight: 500;
 }
 
-.btnh1 {
+.welcomepage-btn {
     text-align: center;
     color: var(--button-text-color);
     background-color: var(--button-color);
@@ -81,183 +116,124 @@ h2 {
     padding: 8px 28px;
 }
 
-a {
-    text-decoration: none;
+.DAOservice {
+    padding: 0;
 }
 
-.as2 {
+.DAOservice li {
+    font-weight: 600;
+    font-size: 1.4rem;
+    list-style: none;
+    text-align: center;
+    padding: 12px 14px;
+    border-radius: 44.939px;
+    background: #182632;
+    gap: 4px;
+    display: inline-flex;
+}
+
+.DAOservice-p {
     text-align: center;
 }
 
-.btns2 {
+.DAOservice-a {
     text-align: center;
     color: #0A1117;
     background-color: var(--button-color);
     margin-inline: auto;
     border-radius: 10rem;
     border: 0.3rem solid #0A1117;
-    padding : 2px 12px;
-
+    padding: 2px 12px;
 }
 
-.uls3 li {
+.pink a {
+    color: #FFB4D3;
+}
+
+.yellow a {
+    color: #FFC24C;
+}
+
+.purpul a {
+    color: #D387F7;
+}
+
+.blue a {
+    color: #77E6FF;
+}
+
+.grey a {
+    color: #707F8D;
+}
+
+.DAOjourney {
+    padding: 0;
+}
+
+.DAOjourney-ul {
+    padding: 0;
+}
+
+.DAOjourney-ul li {
     list-style: none;
     text-align: center;
     font-size: 2rem;
 }
 
-.uls3 {
-    padding: 0;
-}
-
-.uls3 a {
+.DAOjourney a {
     color: #37424D;
 }
 
-.uls3 a:hover {
+.DAOjourney a:hover {
     color: #23C9DE;
 }
 
-article {
-    color: var(--h-text-color);
-}
-
-.burger_menu {
-    color: #FFA903;
-    background-color: var(--background-color);
-    border: none;
-}
-
-
-.cardp {
-    border-radius: 2rem;
-    border: 0.2rem solid #2A3744;
-    background-color: #121E28;
-    text-align: center;
-}
-
-.card h3 {
-    font-size: 1.8rem;
-}
-
-.card p {
-    font-size: 1.3rem;
-}
-
-.card1 {
-    border-radius: 2rem;
-    background: #77E6FF;
-    text-align: center;
-    color: #10151A;
-}
-
-.card2 {
-    border-radius: 2rem;
-    background: #E2C1F9;
-    text-align: center;
-    color: #10151A;
-}
-
-.card3 {
-    border-radius: 2rem;
-    background: #DBE268;
-    text-align: center;
-    color: #10151A;
-}
-
-.btnpodcast {
-    font-size: 1.2rem;
-    color: var(--h-text-color);
-}
-
-.cardp h3 {
-    font-size: 1.7rem;
-}
-
-.cardp p {
-    font-size: 1.4rem;
-}
-
-.btnseeall {
-    font-size: 1.8rem;
-    color: #8395A7;
-}
-
-.btnpress {
-    font-size: 1.4rem;
-    color: #10151A;
-}
-
-.form {
-    border-radius: 2.2rem;
-    border: 0.1rem solid #2A3744;
-    background: #14212D;
-    text-align: center;
-}
-
-.form p {
-    color: #9AAFC3;
-}
-
-.submit {
-    border-radius: 1rem;
-    background-color: #E2C1F9;
-    color: #10151A;
-}
-
-footer {
-    background-color: #121E28;
-}
-
-.DAOul li {
-    font-weight: 600;
-    font-size: 1.4rem;
-    list-style: none;
-    text-align: center;
-}
-
-.DAOul {
+.DAOapp {
     padding: 0;
 }
 
-.pink a{
-    color: #FFB4D3;
+.DAOapp .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+
 }
-.yellow a{
-    color: #FFC24C;
+
+.DAOapp a {
+    color: #FFCF01;
+    padding: 4px 29px 4px 30px;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
-.purpul a{
-    color: #D387F7;
-}
-.blue a{
-    color: #77E6FF;
-}
-.grey a{
-    color: #707F8D;
-}
-.uls4 {
+
+.DAOapp-ul {
     padding: 0;
 }
 
-.uls4 li {
+.DAOapp-ul li {
     font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
     list-style: none;
+    display: inline-flex;
 }
 
-.uls4 button {
+.DAOapp-ul button {
     color: #8395A7;
     background-color: var(--background-color);
     border: none;
 
 }
 
-.uls4 button:hover {
+.DAOapp-ul button:hover {
     color: #FFC803;
 }
 
-.btnwatch {
+.DAOapp-btn-watch {
     text-align: center;
     background: rgba(255, 207, 1, 0.15);
     border-radius: 0.8rem;
@@ -265,31 +241,45 @@ footer {
 }
 
 
-.btnwatch a {
+.DAOapp-btn-watch a {
     color: #FFCF01;
 }
 
-.uls5 {
+.DAOpartners {
     padding: 0;
 }
 
-.uls5 li {
+.DAOpartners-ul {
+    padding: 0;
+    display: flex;
+}
+
+.DAOpartners-ul li {
     text-align: center;
     list-style: none;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.uls5 a {
+.DAOpartners-ul a {
     color: var(--h-text-color);
-
 }
 
-.uls6 {
+.DAOpartners-ul img {
+    border-radius: 2rem;
+    border: 0.957px solid #2A3744;
+    background: #121E28;
+}
+
+.DAOstaff {
     padding: 0;
 }
 
-.uls6 li {
+.DAOstaff-ul {
+    padding: 0;
+}
+
+.DAOstaff-ul li {
     list-style: none;
     text-align: center;
     font-size: 1.8rem;
@@ -297,7 +287,105 @@ footer {
     color: var(--h-text-color);
 }
 
-footer .ul1 {
+.DAOform {
+    border-radius: 2.2rem;
+    border: 0.1rem solid #2A3744;
+    background: #14212D;
+    text-align: center;
+}
+
+.DAOform p {
+    color: #9AAFC3;
+}
+
+
+.DAOform-submit {
+    border-radius: 1rem;
+    background-color: #E2C1F9;
+    color: #10151A;
+}
+
+.DAOsponsors {
+    padding: 0;
+}
+
+.DAOpaper {
+    padding: 0;
+}
+
+.DAOpaper-card1 {
+    border-radius: 2rem;
+    background: #77E6FF;
+    text-align: center;
+    color: #10151A;
+}
+
+.DAOpaper-card2 {
+    border-radius: 2rem;
+    background: #E2C1F9;
+    text-align: center;
+    color: #10151A;
+}
+
+.DAOpaper-card3 {
+    border-radius: 2rem;
+    background: #DBE268;
+    text-align: center;
+    color: #10151A;
+}
+
+.DAOpaper-btn-read {
+    font-size: 1.4rem;
+    color: #10151A;
+}
+
+.DAOpaper-p {
+    text-align: center;
+}
+
+.DAOpaper-btn-seeall {
+    font-size: 1.8rem;
+    color: #8395A7;
+}
+
+.DAOpodcasts {
+    padding: 0;
+}
+
+.DAOpodcasts-card {
+    border-radius: 2rem;
+    border: 0.2rem solid #2A3744;
+    background-color: #121E28;
+    text-align: center;
+}
+
+.DAOpodcasts-card h3 {
+    font-size: 1.7rem;
+}
+
+.DAOpodcasts-card p {
+    font-size: 1.4rem;
+}
+
+.DAOpodcast-btn-listen {
+    font-size: 1.2rem;
+    color: var(--h-text-color);
+}
+
+.DAOpodcast-p {
+    text-align: center;
+}
+
+.DAOpodcast-btn-seeall {
+    font-size: 1.8rem;
+    color: #8395A7;
+}
+
+footer {
+    padding: 0;
+}
+
+.footer-ul-1 {
     list-style: none;
     text-align: center;
     padding: 0;
@@ -305,15 +393,15 @@ footer .ul1 {
     font-weight: 600;
 }
 
-footer .ul1 li {
+.footer-ul-1 li {
     display: inline-block;
 }
 
-footer .ul1 li a {
+.footer-ul-1 a {
     color: var(--h-text-color);
 }
 
-footer .ul2 {
+.footer-ul-2 {
     list-style: none;
     text-align: center;
     padding: 0;
@@ -321,31 +409,10 @@ footer .ul2 {
     font-weight: 600;
 }
 
-footer .ul2 li {
+.footer-ul-2 li {
     display: inline-block;
 }
 
-footer .ul2 li a {
+.footer-ul-2 a {
     color: var(--h-text-color);
-}
-header{
-    background-color: var(--background-color);
-    /* position: fixed; */
-}
-
-.tools .wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    
-}
-.tools a{
-    color: #FFCF01;
-    padding: 4px 29px 4px 30px;
-    border-radius: 0.8rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
