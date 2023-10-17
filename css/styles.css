@@ -52,6 +52,7 @@ body {
 
 header {
     background-color: var(--background-color);
+    padding: 16px;
 }
 
 article {
@@ -259,6 +260,7 @@ footer {
     list-style: none;
     font-size: 1.2rem;
     font-weight: 600;
+    flex-wrap: wrap;
 }
 
 .DAOpartners-ul a {
@@ -269,6 +271,7 @@ footer {
     border-radius: 2rem;
     border: 0.957px solid #2A3744;
     background: #121E28;
+    display: block;
 }
 
 .DAOstaff {
