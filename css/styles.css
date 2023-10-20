@@ -57,6 +57,7 @@ header {
 
 article {
     color: var(--h-text-color);
+    margin: 0 16px 0 16px ;
 }
 
 h1 {
@@ -130,7 +131,6 @@ footer {
     border-radius: 44.939px;
     background: #182632;
     gap: 4px;
-    display: inline-flex;
 }
 
 .DAOservice-p {
@@ -194,7 +194,6 @@ footer {
 }
 
 .DAOapp .wrapper {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 1.5rem;
@@ -206,7 +205,6 @@ footer {
     color: #FFCF01;
     padding: 4px 29px 4px 30px;
     border-radius: 0.8rem;
-    display: flex;
     align-items: center;
     gap: 8px;
 }
@@ -220,7 +218,6 @@ footer {
     font-weight: 600;
     text-align: center;
     list-style: none;
-    display: inline-flex;
 }
 
 .DAOapp-ul button {
@@ -239,6 +236,8 @@ footer {
     background: rgba(255, 207, 1, 0.15);
     border-radius: 0.8rem;
     margin-inline: auto;
+    padding: 4px 29px 4px 30px;
+    
 }
 
 
@@ -252,7 +251,6 @@ footer {
 
 .DAOpartners-ul {
     padding: 0;
-    display: flex;
 }
 
 .DAOpartners-ul li {
@@ -260,7 +258,6 @@ footer {
     list-style: none;
     font-size: 1.2rem;
     font-weight: 600;
-    flex-wrap: wrap;
 }
 
 .DAOpartners-ul a {
@@ -296,6 +293,9 @@ footer {
     background: #14212D;
     text-align: center;
 }
+.form label{
+    padding: 13px 184px 13px 18px;
+}
 
 .DAOform p {
     color: #9AAFC3;
@@ -306,6 +306,8 @@ footer {
     border-radius: 1rem;
     background-color: #E2C1F9;
     color: #10151A;
+    padding: 10px;
+    
 }
 
 .DAOsponsors {
@@ -396,9 +398,8 @@ footer {
     font-weight: 600;
 }
 
-.footer-ul-1 li {
-    display: inline-block;
-}
+/* .footer-ul-1 li {
+} */
 
 .footer-ul-1 a {
     color: var(--h-text-color);
@@ -412,9 +413,9 @@ footer {
     font-weight: 600;
 }
 
-.footer-ul-2 li {
-    display: inline-block;
-}
+/* .footer-ul-2 li {
+    
+} */
 
 .footer-ul-2 a {
     color: var(--h-text-color);
