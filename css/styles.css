@@ -120,17 +120,24 @@ footer {
 
 .DAOservice {
     padding: 0;
+    
+}
+
+.DAOservice-ul{
+    padding: 0;
 }
 
 .DAOservice li {
     font-weight: 600;
     font-size: 1.4rem;
     list-style: none;
-    text-align: center;
     padding: 12px 14px;
     border-radius: 44.939px;
     background: #182632;
     gap: 4px;
+    text-align: center;
+    display: inline-flex;
+    margin: 6px 6px 6px 6px;
 }
 
 .DAOservice-p {
@@ -138,13 +145,11 @@ footer {
 }
 
 .DAOservice-a {
-    text-align: center;
     color: #0A1117;
     background-color: var(--button-color);
     margin-inline: auto;
     border-radius: 10rem;
-    border: 0.3rem solid #0A1117;
-    padding: 2px 12px;
+    border: 0.3rem solid #0A1117; 
 }
 
 .pink a {
