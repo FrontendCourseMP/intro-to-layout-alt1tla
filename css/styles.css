@@ -134,7 +134,8 @@ footer {
 .DAOservice-ul{
     padding: 0;
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .DAOservice-ul li {
