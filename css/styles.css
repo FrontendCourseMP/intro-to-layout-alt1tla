@@ -65,7 +65,7 @@ header {
 
 article {
     color: var(--h-text-color);
-    margin: 0 16px 0 16px;
+    margin: 16px 16px 16px 16px;
 }
 
 h1 {
@@ -282,6 +282,10 @@ footer {
 
 .DAOpartners-ul {
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .DAOpartners-ul li {
@@ -289,19 +293,16 @@ footer {
     list-style: none;
     font-size: 1.2rem;
     font-weight: 600;
+
 }
 
 .DAOpartners-ul a {
     color: var(--h-text-color);
 }
 
-.DAOpartners-ul img {
-    border-radius: 2rem;
-    border: 0.957px solid #2A3744;
-    background: #121E28;
+.DAOpartners img{
     display: block;
 }
-
 .DAOstaff {
     padding: 0;
 }
