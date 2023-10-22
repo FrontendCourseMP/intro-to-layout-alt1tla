@@ -253,7 +253,7 @@ footer {
     color: #FFC803;
 }
 
-.DAOapp a{
+.DAOapp a {
     background: rgba(255, 207, 1, 0.15);
     border-radius: 0.8rem;
     color: #FFCF01;
@@ -261,7 +261,7 @@ footer {
     border-radius: 0.8rem;
     gap: 8px;
     justify-content: baseline;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
@@ -300,15 +300,20 @@ footer {
     color: var(--h-text-color);
 }
 
-.DAOpartners img{
+.DAOpartners img {
     display: block;
 }
+
 .DAOstaff {
     padding: 0;
 }
 
 .DAOstaff-ul {
     padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: baseline;
 }
 
 .DAOstaff-ul li {
@@ -317,6 +322,22 @@ footer {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--h-text-color);
+    padding: 2px 5px 2px 5px;
+
+}
+
+.DAOstaff-img {
+    display: block;
+    margin: 10px 10px 10px 10px;
+
+}
+
+.contenerstaff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin: 24px 30px 22px 30px;
 }
 
 .DAOform {
