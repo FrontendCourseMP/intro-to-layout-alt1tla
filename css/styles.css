@@ -40,6 +40,14 @@
     margin: 0 auto;
     padding: 0 0;
     border-radius: 20px;
+    opacity: 0;
+}
+
+.DAOservice-wrap-img{
+    overflow: hidden;
+    margin: 0px 16px 0px 16px;
+    background-image: url("public/images/Artworks.png");
+    background-size: cover;
 }
 
 :root {
