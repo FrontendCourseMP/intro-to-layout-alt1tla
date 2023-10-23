@@ -72,13 +72,14 @@ h1 {
     text-align: center;
     color: var(--h-text-color);
     font-size: 3.6rem;
+    margin: 80px 23px 16px 23px;
 }
 
 h2 {
     text-align: center;
     color: var(--h-text-color);
     font-size: 2.8rem;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 16px 24px 16px;
 }
 
 
@@ -114,17 +115,19 @@ footer {
 .welcomepage-p {
     text-align: center;
     font-weight: 500;
+    margin: 0px 23px 40px 23px;
 }
 
 .welcomepage-btn {
     text-align: center;
     color: var(--button-text-color);
     background-color: var(--button-color);
-    display: block;
+    display: flex;
     margin-inline: auto;
     font-size: 1.5rem;
     border-radius: 1.2rem;
     padding: 8px 28px;
+    margin-bottom: 100px;
 }
 
 .DAOservice {
@@ -137,6 +140,7 @@ footer {
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin: 0px auto 24px auto;
 }
 
 .DAOservice-ul li {
@@ -148,26 +152,28 @@ footer {
     background: #182632;
     gap: 4px;
     text-align: center;
-
     margin: 6px 6px 6px 6px;
 
 }
 
 .DAOservice-p {
     text-align: center;
+    margin: 0px auto 68px auto;
 }
 
 .DAOservice-a {
     color: #0A1117;
     background-color: var(--button-color);
-    margin-inline: auto;
     border-radius: 10rem;
     border: 0.3rem solid #0A1117;
+    padding: 0px 12px 0px 12px;
+    
 }
 
 .DAOservice img {
     display: flex;
     background: #0A1117;
+    margin: 0px auto 0px auto;
 }
 
 .pink a {
@@ -197,6 +203,7 @@ footer {
 .DAOjourney-ul {
     padding: 0;
     line-height: 36px;
+    margin: 0px auto 80px auto;
 }
 
 .DAOjourney-ul li {
@@ -217,15 +224,9 @@ footer {
     padding: 0;
 }
 
-.DAOapp .wrapper {
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
 .DAOapp-img {
     display: block;
+    margin: 0 auto 28px auto;
 }
 
 .DAOapp-ul {
@@ -233,6 +234,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin: 0px auto 26px auto;
 }
 
 .DAOapp-ul li {
@@ -270,6 +272,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin:0px auto 80px auto;
 }
 
 
@@ -287,6 +290,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0px 34px 80px 34px;
 }
 
 .DAOpartners-ul li {
@@ -339,7 +343,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    margin: 24px 30px 22px 30px;
+    margin: 0px 30px 22px 30px;
 }
 
 .DAOform {
@@ -347,23 +351,33 @@ footer {
     border: 0.1rem solid #2A3744;
     background: #14212D;
     text-align: center;
+    margin: 0px 16px 80px 16px;
 }
 
-.form label {
-    padding: 13px 184px 13px 18px;
+.DAOform-h2{
+    margin: 28px auto 8px auto;
+}
+
+.DAOform input{
+    margin: 0px auto 16px auto;
+    border-radius: 10px;
+    border: 1px solid #2A3744;
+    background: #121E28;
+    width: 279px;
 }
 
 .DAOform p {
     color: #9AAFC3;
+    margin: 0px 24px 24px 24px;
 }
-
 
 .DAOform-submit {
     border-radius: 1rem;
     background-color: #E2C1F9;
     color: #10151A;
     padding: 10px;
-
+    margin-bottom: 24px ;
+    
 }
 
 .DAOsponsors {
@@ -379,6 +393,7 @@ footer {
     background: #77E6FF;
     text-align: center;
     color: #10151A;
+    margin: 0px 16px 16px 16px;
 }
 
 .DAOpaper-card2 {
@@ -386,6 +401,7 @@ footer {
     background: #E2C1F9;
     text-align: center;
     color: #10151A;
+    margin: 0px 16px 16px 16px;
 }
 
 .DAOpaper-card3 {
@@ -393,6 +409,7 @@ footer {
     background: #DBE268;
     text-align: center;
     color: #10151A;
+    margin: 0px 16px 40px 16px;
 }
 
 .DAOpaper-h3{
@@ -410,6 +427,7 @@ footer {
 
 .DAOpaper-p {
     text-align: center;
+    margin-bottom:80px;
 }
 
 .DAOpaper-btn-seeall {
@@ -441,6 +459,15 @@ footer {
     border: 0.2rem solid #2A3744;
     background-color: #121E28;
     text-align: center;
+    margin: 0px 16px 16px 16px;
+}
+
+.DAOpodcasts-card-bottom{
+    border-radius: 2rem;
+    border: 0.2rem solid #2A3744;
+    background-color: #121E28;
+    text-align: center;
+    margin: 0px 16px 40px 16px;
 }
 
 .DAOpodcasts-card h3 {
@@ -457,16 +484,27 @@ footer {
 }
 
 .DAOpodcast-p {
-    text-align: center;
+    text-align: center;    
+    margin-bottom: 80px;
 }
 
 .DAOpodcast-btn-seeall {
     font-size: 1.8rem;
     color: #8395A7;
+
 }
 
 footer {
-    padding: 0;
+    padding: 0px 70px;
+}
+
+.DAOlogo{
+    display: flex;
+    justify-content: center;
+}
+
+.DAOlogo-img{
+    margin: 32px auto 32px auto;
 }
 
 .footer-ul-1 {
@@ -475,6 +513,13 @@ footer {
     padding: 0;
     font-size: 1.4rem;
     font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-ul-1 li{
+    margin:0px 20px 32px 20px;
 }
 
 .footer-ul-1 a {
@@ -487,6 +532,13 @@ footer {
     padding: 0;
     font-size: 1.4rem;
     font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-ul-2 li{
+    margin:0px 10px 32px 10px;
 }
 
 .footer-ul-2 a {
