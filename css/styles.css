@@ -358,7 +358,7 @@ footer {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: baseline;
+    align-items: baseline;
     margin: 0px 30px 71px 30px;
 
 }
