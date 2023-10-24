@@ -28,29 +28,10 @@
 
 .wrapper {
     width: 100%;
-    max-width: 70rem;
+    max-width: 80rem;
     /* 65ch - удобоворимое кол-во символов на строке; */
     margin: 0 auto;
     padding: 0 1rem;
-}
-
-.DAOservice-wrap {
-    display: flex;
-    top: -10px;
-    object-fit: cover;
-    padding: 0 0;
-    overflow-x: hidden;
-    object-fit: cover;
-    border-radius: 20px;
-    background-color: black;
-}
-
-.DAOservice-wrap-img{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    height: 400px;
-    overflow-x: hidden;
 }
 
 :root {
@@ -146,6 +127,25 @@ footer {
 
 }
 
+.DAOservice-wrap {
+    display: flex;
+    padding: 0px 0px;
+    overflow-x: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.DAOservice-wrap-img {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 400px;
+    overflow-x: hidden;
+    min-width: 360px;
+    z-index: -1;
+}
+
 .DAOservice-ul {
     padding: 0;
     align-self: center;
@@ -165,7 +165,6 @@ footer {
     gap: 4px;
     text-align: center;
     margin: 6px 6px 6px 6px;
-
 }
 
 .DAOservice-p {
@@ -177,19 +176,17 @@ footer {
     color: #0A1117;
     background-color: var(--button-color);
     border-radius: 10rem;
-    border: 0.3rem solid #0A1117;
+    border: 0.4rem solid #0A1117;
     padding: 0px 12px 0px 12px;
-    
 }
 
 .DAOservice img {
-    display: flex;
     background: #0A1117;
     margin: 0px auto 0px auto;
 }
 
 .DAOservice .wrapper {
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 .pink a {
@@ -240,10 +237,31 @@ footer {
     padding: 0;
 }
 
+.DAOapp-wrap-img {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    min-height: 230px;
+    max-height: 1400px;
+    overflow-x: hidden;
+    min-width: 360px;
+    z-index: -1;
+
+}
+
 .DAOapp-img {
-    display: block;
+    display: flex;
+    padding: 0px 0px;
+    overflow-x: hidden;
+    object-fit: cover;
     margin: 0 auto 28px auto;
 }
+
+.DAOapp .wrapper {
+    max-width: 1000px;
+
+}
+
 
 .DAOapp-ul {
     padding: 0;
@@ -288,7 +306,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin:0px auto 80px auto;
+    margin: 0px auto 80px auto;
 }
 
 
@@ -370,11 +388,11 @@ footer {
     margin: 0px 16px 80px 16px;
 }
 
-.DAOform-h2{
+.DAOform-h2 {
     margin: 28px auto 8px auto;
 }
 
-.DAOform input{
+.DAOform input {
     margin: 0px auto 16px auto;
     border-radius: 10px;
     border: 1px solid #2A3744;
@@ -392,8 +410,8 @@ footer {
     background-color: #E2C1F9;
     color: #10151A;
     padding: 10px;
-    margin-bottom: 24px ;
-    
+    margin-bottom: 24px;
+
 }
 
 .DAOsponsors {
@@ -428,7 +446,7 @@ footer {
     margin: 0px 16px 40px 16px;
 }
 
-.DAOpaper-h3{
+.DAOpaper-h3 {
     margin: 0px 20px 0px 20px;
 }
 
@@ -438,12 +456,12 @@ footer {
     display: flex;
     justify-content: baseline;
     flex-direction: row;
-    
+
 }
 
 .DAOpaper-p {
     text-align: center;
-    margin-bottom:80px;
+    margin-bottom: 80px;
 }
 
 .DAOpaper-btn-seeall {
@@ -454,15 +472,15 @@ footer {
     justify-content: center;
 }
 
-.DAOpaper-img{
+.DAOpaper-img {
     margin: 20px 116px 0px 20px;
 }
 
-.arrowread{ 
+.arrowread {
     margin: 3px 0px 3px 6px;
 }
 
-.arrowseeall{
+.arrowseeall {
     margin: 0px 0px 0px 10px;
 }
 
@@ -478,7 +496,7 @@ footer {
     margin: 0px 16px 16px 16px;
 }
 
-.DAOpodcasts-card-bottom{
+.DAOpodcasts-card-bottom {
     border-radius: 2rem;
     border: 0.2rem solid #2A3744;
     background-color: #121E28;
@@ -500,7 +518,7 @@ footer {
 }
 
 .DAOpodcast-p {
-    text-align: center;    
+    text-align: center;
     margin-bottom: 80px;
 }
 
@@ -514,12 +532,12 @@ footer {
     padding: 0px 70px;
 }
 
-.DAOlogo{
+.DAOlogo {
     display: flex;
     justify-content: center;
 }
 
-.DAOlogo-img{
+.DAOlogo-img {
     margin: 32px auto 32px auto;
 }
 
@@ -534,8 +552,8 @@ footer {
     justify-content: center;
 }
 
-.footer-ul-1 li{
-    margin:0px 20px 32px 20px;
+.footer-ul-1 li {
+    margin: 0px 20px 32px 20px;
 }
 
 .footer-ul-1 a {
@@ -553,8 +571,8 @@ footer {
     justify-content: center;
 }
 
-.footer-ul-2 li{
-    margin:0px 10px 32px 10px;
+.footer-ul-2 li {
+    margin: 0px 10px 32px 10px;
 }
 
 .footer-ul-2 a {
