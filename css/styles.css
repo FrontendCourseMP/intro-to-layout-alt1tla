@@ -303,7 +303,7 @@ footer {
     padding: 4px 29px 4px 30px;
     border-radius: 0.8rem;
     gap: 8px;
-    justify-content: baseline;
+    align-items: baseline;
     display: flex;
     align-items: center;
 }
@@ -422,9 +422,10 @@ footer {
 
 .DAOsponsors {
     padding: 0;
-    overflow-x:scroll;
+    /* overflow-x:scroll; */
     margin-bottom: 80px;
 }
+
 
 .DAOsponsors a{
     margin: 8px 8px;
@@ -485,7 +486,7 @@ footer {
     font-size: 1.4rem;
     color: #10151A;
     display: flex;
-    justify-content: baseline;
+    align-items: baseline;
     flex-direction: row;
 
 }
@@ -499,7 +500,7 @@ footer {
     font-size: 1.8rem;
     color: #8395A7;
     display: flex;
-    justify-content: baseline;
+    align-items: baseline;
     justify-content: center;
 }
 
@@ -547,7 +548,7 @@ footer {
     font-size: 1.2rem;
     color: var(--h-text-color);
     display: flex;
-    justify-content: baseline;
+    align-items: baseline;
     flex-direction: row;
 }
 
@@ -560,7 +561,7 @@ footer {
     font-size: 1.8rem;
     color: #8395A7;
     display: flex;
-    justify-content: baseline;
+    align-items: baseline;
     justify-content: center;
 }
 
