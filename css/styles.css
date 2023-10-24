@@ -55,9 +55,15 @@ header {
     padding: 16px;
 }
 
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
 article {
     color: var(--h-text-color);
     margin: 16px 16px 16px 16px;
+    padding: 20px 20px 20px 20px;
 }
 
 h1 {
@@ -140,7 +146,7 @@ footer {
     display: flex;
     position: relative;
     justify-content: center;
-    height: 400px;
+    height: 493px;
     overflow-x: hidden;
     min-width: 360px;
     z-index: -1;
@@ -425,7 +431,7 @@ footer {
 .DAOpaper-card1 {
     border-radius: 2rem;
     background: #77E6FF;
-    text-align: center;
+    text-align:start;
     color: #10151A;
     margin: 0px 16px 16px 16px;
 }
@@ -433,7 +439,7 @@ footer {
 .DAOpaper-card2 {
     border-radius: 2rem;
     background: #E2C1F9;
-    text-align: center;
+    text-align: start;
     color: #10151A;
     margin: 0px 16px 16px 16px;
 }
@@ -441,13 +447,17 @@ footer {
 .DAOpaper-card3 {
     border-radius: 2rem;
     background: #DBE268;
-    text-align: center;
+    text-align: start;
     color: #10151A;
     margin: 0px 16px 40px 16px;
 }
 
 .DAOpaper-h3 {
-    margin: 0px 20px 0px 20px;
+    margin-left:0;
+}
+
+.DAOpaper img{
+    margin-left: 0;
 }
 
 .DAOpaper-btn-read {
@@ -492,7 +502,7 @@ footer {
     border-radius: 2rem;
     border: 0.2rem solid #2A3744;
     background-color: #121E28;
-    text-align: center;
+    text-align: start;
     margin: 0px 16px 16px 16px;
 }
 
@@ -500,7 +510,7 @@ footer {
     border-radius: 2rem;
     border: 0.2rem solid #2A3744;
     background-color: #121E28;
-    text-align: center;
+    text-align: start;
     margin: 0px 16px 40px 16px;
 }
 
@@ -515,6 +525,9 @@ footer {
 .DAOpodcast-btn-listen {
     font-size: 1.2rem;
     color: var(--h-text-color);
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
 }
 
 .DAOpodcast-p {
@@ -525,7 +538,9 @@ footer {
 .DAOpodcast-btn-seeall {
     font-size: 1.8rem;
     color: #8395A7;
-
+    display: flex;
+    justify-content: baseline;
+    justify-content: center;
 }
 
 footer {
