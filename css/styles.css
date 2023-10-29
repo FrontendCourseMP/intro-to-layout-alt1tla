@@ -49,6 +49,12 @@ body {
     background-color: var(--background-color);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
 }
 
 header {
@@ -98,7 +104,9 @@ button {
 
 footer {
     background-color: #121E28;
+    flex-grow: 0;
 }
+
 
 /* sections */
 
