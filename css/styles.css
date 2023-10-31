@@ -25,6 +25,10 @@
 }
 
 /* body */
+*{
+    box-sizing: border-box;
+}
+
 
 .wrapper {
     width: 100%;
@@ -32,7 +36,6 @@
     /* 65ch - удобоворимое кол-во символов на строке; */
     margin: 0 auto;
     padding: 0 1rem;
-    box-sizing: border-box;
 }
 
 :root {
@@ -63,6 +66,10 @@ header {
     position: sticky;
     z-index: 100;
     top:0;    
+}
+
+header img{
+    display: block;
 }
 
 header .wrapper{
@@ -422,11 +429,12 @@ footer {
 }
 
 .DAOform input {
-    margin: 0px auto 16px auto;
+    margin: 24px auto 16px auto;
     border-radius: 10px;
     border: 1px solid #2A3744;
     background: #121E28;
     width: 279px;
+    padding: 13px 0px 13px 18px;
 }
 
 .DAOform p {
@@ -506,14 +514,11 @@ footer {
     margin-left:0;
 }
 
-.DAOpaper img{
-    margin: 0;
-}
 
 .DAOpaper-btn-read {
     font-size: 1.4rem;
     color: #10151A;
-    display: inline;
+    display: flex;
     align-items: baseline;
     flex-direction: row;
     padding: 5px 5px 5px 5px;
@@ -534,7 +539,7 @@ footer {
 }
 
 .DAOpaper-img {
-    margin: 20px 116px 0px 20px;
+    margin: 0;
 }
 
 .arrowread {
@@ -589,13 +594,14 @@ footer {
 .DAOpodcast-btn-seeall {
     font-size: 1.8rem;
     color: #8395A7;
-    display: flex;
+    display: inline;
     align-items: baseline;
     justify-content: center;
 }
 
-footer {
-    padding: 0px 70px;
+.footer {
+    padding: 20px;
+    padding-top:0;
 }
 
 .DAOlogo {
@@ -616,11 +622,11 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0;
+    gap:2,5rem;
+    margin-bottom: 32px;
 }
 
-.footer-ul-1 li {
-    margin: 0px 20px 32px 20px;
-}
 
 .footer-ul-1 a {
     color: var(--h-text-color);
@@ -635,12 +641,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0;
+    gap:2,5rem;
 }
 
-.footer-ul-2 li {
-    margin: 0px 10px 32px 10px;
-}
-
-.footer-ul-2 a {
-    color: var(--h-text-color);
+.footer a{
+padding: 5px;
 }
