@@ -435,7 +435,8 @@ footer {
     border: 1px solid #2A3744;
     background: #121E28;
     width: 279px;
-    padding: 13px 0px 13px 18px;
+    padding: 13px 18px 13px 18px;
+    color:var(--h-text-color)
 }
 
 .DAOform p {
@@ -606,6 +607,11 @@ footer {
     padding-top:0;
 }
 
+.footer img{
+    display: block;
+    padding: 5px;
+}
+
 .DAOlogo {
     display: flex;
     justify-content: center;
@@ -645,8 +651,4 @@ footer {
     justify-content: center;
     margin: 0;
     gap:20px;
-}
-
-.footer a{
-    padding: 8px 5px 5px 5px;
 }
