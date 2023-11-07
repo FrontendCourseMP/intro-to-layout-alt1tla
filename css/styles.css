@@ -82,17 +82,8 @@ header .wrapper{
     justify-content: space-between;
 }
 
-@media (max-width: 767px) {
-    .navigation {
-        display: none;
-    }
-}
 
-@media (min-width: 768px){
-    .header-btn-bm{
-        display:none;
-    }
-}
+
 
 article {
     color: var(--h-text-color);
@@ -143,7 +134,7 @@ footer {
 }
 .navigation{
     padding: 0;
-    display: flex;
+    display: none;
     flex-direction: row;
     gap:128px;
 }
@@ -703,3 +694,18 @@ footer {
     margin: 0;
     gap:20px;
 }
+
+@media (min-width: 768px){
+    .header-btn-bm{
+        display:none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+    .br{
+        display: none;
+    }
+    
+}
+
