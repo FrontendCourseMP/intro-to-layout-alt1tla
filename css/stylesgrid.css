@@ -6,6 +6,10 @@
     padding: 0 1rem;
 }
 
+a{
+    text-decoration: none;
+}
+
 :root {
     --h-text-color: #FFF;
     --button-color: #FFCF01;
@@ -103,6 +107,48 @@ header .wrapper {
     grid-column-end: 5;
 }
 
+.dashboard{
+    display: grid;
+    grid-template-columns: 50px 250px 125px 125px 250px;
+    grid-template-rows: 300px 300px 300px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.dashboard__aside{
+    grid-column: 1;
+    grid-row: 1/4; 
+    background-color: black;
+}
+
+.dashboard__board--1{
+    grid-column: 2/6;
+}
+
+.dashboard__board--2{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.dashboard__board--3{
+    grid-column: 3/5;
+    grid-row: 2;
+}
+
+.dashboard__board--4{
+    grid-column: 5/6;
+    grid-row: 2;
+}
+
+.dashboard__board--5{
+    grid-column: 2/4;
+    grid-row: 3;
+}
+
+.dashboard__board--6{
+    grid-column: 4/6;
+    grid-row: 3;
+}
 
 .footer-ul-1 {
     list-style: none;
