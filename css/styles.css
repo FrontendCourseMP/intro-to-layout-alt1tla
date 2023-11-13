@@ -768,5 +768,24 @@ footer {
     .DAOpodcasts{
         margin-bottom:200px;
     }
+    .DAOlogo-img{
+        margin: 0;
+    }
+    .footer-ul-1{
+        margin: 0;
+        gap: 36px;
+        align-self: center;
+    }
+    .footer-ul-2{
+        margin: 0;
+        gap: 12px;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer{
+        padding:20px;
+    }
 }
 
