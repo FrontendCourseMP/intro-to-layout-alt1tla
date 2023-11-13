@@ -598,6 +598,10 @@ footer {
     padding: 0;
 }
 
+.DAOpodcasts-content{
+    margin-bottom: 40px;
+    padding: 0;
+}
 
 .DAOpodcasts-card {
     border-radius: 2rem;
@@ -605,14 +609,6 @@ footer {
     background-color: #121E28;
     text-align: start;
     margin: 0px 16px 16px 16px;
-}
-
-.DAOpodcasts-card-bottom {
-    border-radius: 2rem;
-    border: 0.2rem solid #2A3744;
-    background-color: #121E28;
-    text-align: start;
-    margin: 0px 16px 40px 16px;
 }
 
 .DAOpodcasts-card h3 {
@@ -703,9 +699,50 @@ footer {
     .navigation {
         display: flex;
     }
+
     .br{
         display: none;
     }
-    
+
+    .DAOpaper-content{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .DAOpaper-card{
+        max-width:361px ;
+        margin: 0;
+        flex-grow: 1;
+    }
+    .DAOpaper-card h3{
+        margin: 20px 0 0 0;
+
+    }
+    .DAOpaper-card1 h3{
+        margin-top: 14px;
+    }
+    .DAOpaper-card1{
+        padding-top:0;
+    }
+    .DAOpaper-card p{
+        margin: 12px 0 0 0 ;
+
+    }
+    .DAOpodcasts-content{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .DAOpodcasts-card{
+        max-width:361px ;
+        margin: 0;
+        flex-grow: 1;
+    }
+    .DAOpaper-h2{
+        text-align: start;
+    }
+    .DAOpodcasts-h2{
+        text-align: start;
+    }
 }
 
