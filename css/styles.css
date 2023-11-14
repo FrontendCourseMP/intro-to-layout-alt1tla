@@ -718,9 +718,8 @@ footer {
         gap: 2rem;
     }
     .DAOpaper-card{
-        max-width:361px ;
+        width:361px ;
         margin: 0;
-        flex-grow: 1;
     }
     .DAOpaper-card h3{
         margin: 20px 0 0 0;
@@ -742,9 +741,9 @@ footer {
         gap: 2rem;
     }
     .DAOpodcasts-card{
-        max-width:361px ;
+        width:361px;
         margin: 0;
-        flex-grow: 1;
+
     }
     .DAOpaper-h2,
     .DAOpaper-p{
