@@ -1,81 +1,114 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/stylesgrid.css" />
-        <title>grid-Mondrian</title>
-    </head>
-    <body>
-        <header>
-            <div class="wrapper">
-                <a href="#" title="Superdao"><img src="public/images/logo.svg" alt="Logo Superdao"></a>
-                <button class="header-btn-bm"><img src="public/images/bgm.svg" alt="burger_menu"></button>
-            </div>
-        </header>
+<!DOCTYPE html>
+<html lang="en">
 
-        <section  class="grid wrapper">
-            <div class="grid__body">
-                <div class="grid__item--1 grid__item">1</div>
-                <div class="grid__item--2 grid__item">2</div>
-                <div class="grid__item--3 grid__item">3</div>
-                <div class="grid__item--4 grid__item">4</div>
-                <div class="grid__item--5 grid__item">5</div>
-                <div class="grid__item--6 grid__item">6</div>
-                <div class="grid__item--7 grid__item">7</div>
-                <div class="grid__item--8 grid__item">8</div>
-                <div class="grid__item--9 grid__item">9</div>
-            </div>
-        </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/stylesgrid.css" />
+    <title>grid-Mondrian</title>
+</head>
 
-        <section class="wrapper">
-            <div class="dashboard">
-                <aside class="dashboard__aside">
-                    side
-                </aside>
-                <div class="dashboard__board--1"><img src="public/images/grid/board1.jpeg" alt="board"></div>
-                <div class="dashboard__board--2"><img src="public/images/grid/board2.jpeg" alt="board"></div>
-                <div class="dashboard__board--3"><img src="public/images/grid/board3.jpeg" alt="board"></div>
-                <div class="dashboard__board--4"><img src="public/images/grid/board4.jpeg" alt="board"></div>
-                <div class="dashboard__board--5"><img src="public/images/grid/board5.jpeg" alt="board"></div>
-                <div class="dashboard__board--6"><img src="public/images/grid/board6.jpeg" alt="board"></div>
-            </div>
-        </section>
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="#" title="Superdao" class="header-logo"><img src="public/images/logo.svg" alt="Logo Superdao"></a>
+            <button class="header-btn-bm"><img src="public/images/bgm.svg" alt="burger_menu"></button>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li><a class="navigation__item" href="#">Product</a></li>
+                    <li><a class="navigation__item" href="#">Use cases</a></li>
+                    <li><a class="navigation__item" href="#">Learn</a></li>
+                    <li><a class="navigation__item" href="#">About</a></li>
+                    <li><a class="navigation__item" href="#">Jobs</a></li>
+                </ul>
+                <a class="navigation__btn" href="#">Login</a>
+            </nav>
+        </div>
+    </header>
 
-        <section class="wrapper">
-            <div class="painting">
+    <section class="grid ">
+        <div class="grid__body wrapper">
+            <div class="grid__item--1 grid__item">1</div>
+            <div class="grid__item--2 grid__item">2</div>
+            <div class="grid__item--3 grid__item">3</div>
+            <div class="grid__item--4 grid__item">4</div>
+            <div class="grid__item--5 grid__item">5</div>
+            <div class="grid__item--6 grid__item">6</div>
+            <div class="grid__item--7 grid__item">7</div>
+            <div class="grid__item--8 grid__item">8</div>
+            <div class="grid__item--9 grid__item">9</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="dashboard wrapper">
+            <aside class="dashboard__aside">
+                aside
+            </aside>
+            <div class="dashboard__content">
+                <div class="dashboard__board--1"><img class="dashboard__img" src="public/images/grid/board1.jpeg"
+                        alt="board"></div>
+                <div class="dashboard__board--2"><img class="dashboard__img" src="public/images/grid/board2.jpeg"
+                        alt="board"></div>
+                <div class="dashboard__board--3"><img class="dashboard__img" src="public/images/grid/board3.jpeg"
+                        alt="board"></div>
+                <div class="dashboard__board--4"><img class="dashboard__img" src="public/images/grid/board4.jpeg"
+                        alt="board"></div>
+                <div class="dashboard__board--5"><img class="dashboard__img" src="public/images/grid/board5.jpeg"
+                        alt="board"></div>
+                <div class="dashboard__board--6"><img class="dashboard__img" src="public/images/grid/board6.jpeg"
+                        alt="board"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="painting wrapper">
+            <div class="painting__grid painting__item--1">
                 <img class="painting__img pic1" src="public/images/grid/picture.png" alt="mospoly">
                 <a class="painting__link link1" href="">link</a>
+            </div>
+            <div class="painting__grid painting__item--2">
                 <img class="painting__img pic2" src="public/images/grid/picture.png" alt="mospoly">
                 <a class="painting__link link2" href="">link</a>
+            </div>
+            <div class="painting__grid painting__item--3">
                 <img class="painting__img pic3" src="public/images/grid/picture.png" alt="mospoly">
                 <a class="painting__link link3" href="">link</a>
+            </div>
+            <div class="painting__grid painting__item--4">
                 <img class="painting__img pic4" src="public/images/grid/picture.png" alt="mospoly">
                 <a class="painting__link link4" href="">link</a>
+            </div>
+            <div class="painting__grid painting__item--5">
                 <img class="painting__img pic5" src="public/images/grid/picture.png" alt="mospoly">
                 <a class="painting__link link5" href="">link</a>
+            </div>
+            <div class="painting__grid painting__item--6">
                 <img class="painting__img pic6" src="public/images/grid/picture.png" alt="mospoly">
                 <a class="painting__link link6" href="">link</a>
-
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer class="footer wrapper">
-            <div >
-                <a class="DAOlogo" href="#" title="Superdao"><img class="DAOlogo-img" src="public/images/logo.svg" alt="Superdao logo"></a>
-                <ul class="footer-ul-1">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Legal</a></li>
-                </ul>
-                <ul class="footer-ul-2">
-                    <li><a href="#"><img src="public/images/footer/frametw.svg" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="public/images/footer/frametg.svg" alt="Telegram"></a></li>
-                    <li><a href="#"><img src="public/images/footer/frameyt.svg" alt="YouTube"></a></li>
-                    <li><a href="#"><img src="public/images/footer/frameds.svg" alt="Discord"></a></li>
-                </ul>
-            </div>
-        </footer>
-    </body>
-    </html>
+    <footer class="footer">
+        <div class="footer-content wrapper">
+            <a class="DAOlogo" href="#" title="Superdao"><img class="DAOlogo-img" src="public/images/logo.svg"
+                    alt="Superdao logo"></a>
+            <ul class="footer-ul-1">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+            <ul class="footer-ul-2">
+                <li><a href="#"><img src="public/images/footer/frametw.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img src="public/images/footer/frametg.svg" alt="Telegram"></a></li>
+                <li><a href="#"><img src="public/images/footer/frameyt.svg" alt="YouTube"></a></li>
+                <li><a href="#"><img src="public/images/footer/frameds.svg" alt="Discord"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

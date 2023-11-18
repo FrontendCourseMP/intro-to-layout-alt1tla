@@ -6,7 +6,7 @@
     padding: 0 1rem;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -52,15 +52,53 @@ header .wrapper {
     justify-content: space-between;
 }
 
+.navigation {
+    padding: 0;
+    display: none;
+    flex-direction: row;
+    gap: 128px;
+}
+
+.navigation__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 24px;
+    margin: 0;
+    max-height: max-content;
+    align-self: center;
+}
+
+.navigation__btn {
+    max-height: max-content;
+    align-self: center;
+    color: white;
+    background-color: #243241;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navigation__item {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
 .grid {
-    margin-top: 200px;
-    margin-bottom: 200px;
+
+    margin-bottom: 100px;
+    padding: 0;
 }
 
 .grid__body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 4fr 4fr 1fr;
+    width: 220px;
+    height: 220px;
 }
 
 .grid__item {
@@ -73,161 +111,265 @@ header .wrapper {
 .grid__item--1 {
     background-color: #fff;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
+    color: #fff;
 }
 
 .grid__item--2 {
     background-color: yellow;
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    color: yellow;
 }
 
 .grid__item--3 {
     background-color: red;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
+    color: red;
 }
 
 .grid__item--4 {
     background-color: yellow;
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    color: yellow;
 }
+
+.grid__item--5 {
+    color: #fff;
+}
+
+.grid__item--6 {
+    color: #fff;
+}
+
 
 .grid__item--7 {
     background-color: black;
+    color: black;
+}
+
+.grid__item--8 {
+    background-color: #fff;
+    grid-column-start: 2;
+    grid-column-end: 4;
     color: #FFF;
 }
 
 .grid__item--9 {
     background-color: #fff;
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    color: #FFF;
 }
 
-.dashboard{
+.dashboard {
     display: grid;
-    grid-template-columns: 50px 250px 125px 125px 250px;
-    grid-template-rows: 300px 300px 300px;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    /* position-transform */
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 100px;
+    padding: 0;
 }
 
-.dashboard__aside{
+.dashboard__aside {
     grid-column: 1;
-    grid-row: 1/4; 
+    grid-row: 1;
     background-color: black;
 }
 
-.dashboard__board--1{
-    grid-column: 2/6;
-}
-
-.dashboard__board--2{
-    grid-column: 2/3;
-    grid-row: 2;
-}
-
-.dashboard__board--3{
-    grid-column: 3/5;
-    grid-row: 2;
-}
-
-.dashboard__board--4{
-    grid-column: 5/6;
-    grid-row: 2;
-}
-
-.dashboard__board--5{
-    grid-column: 2/4;
-    grid-row: 3;
-}
-
-.dashboard__board--6{
-    grid-column: 4/6;
-    grid-row: 3;
-}
-.painting{
+.dashboard__content {
+    grid-column: 2;
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr)) ;
-    gap:0.3rem;
-    margin-bottom: 200px;
+    grid-template-columns: repeat(1fr, 6);
+    grid-template-rows: repeat(300px, 3);
 }
 
-.painting__img{
-    max-height: 200px;
-    /* transform: scaleX(1); */
+.dashboard__img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+.dashboard__board--1 {
+    grid-row: 1;
+    grid-column: 1/7;
+}
+
+.dashboard__board--2 {
+    grid-row: 2;
+    grid-column: 1/3;
+}
+
+.dashboard__board--3 {
+    grid-row: 2;
+    grid-column: 3/5;
+}
+
+.dashboard__board--4 {
+    grid-row: 2;
+    grid-column: 5/7;
+}
+
+.dashboard__board--5 {
+    grid-row: 3;
+    grid-column: 1/4;
+}
+
+.dashboard__board--6 {
+    grid-row: 3;
+    grid-column: 4/7;
+}
+
+
+.painting {
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.3rem;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+.painting__img {
+    width: 100%;
+    height: 100%;
     z-index: -1;
-    place-self: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
 }
 
-.pic1{
-    grid-column: 1/2;
-    grid-row: 1;
-}
-
-.pic2{
-    grid-column: 2/3;
-    grid-row: 1;
-}
-
-.pic3{
-    grid-column: 3/4;
-    grid-row: 1;
-}
-.pic4{
-    grid-column: 1/2;
-    grid-row: 2;
-}
-.pic5{
-    grid-column: 2/3;
-    grid-row: 2;
-}
-.pic6{
-    grid-column: 3/4;
-    grid-row: 2;
-}
-
-.painting__link{
+.painting__link {
     text-decoration: none;
     color: #FFA903;
     font-size: 3rem;
     z-index: 2;
     height: max-content;
-    place-self: center;
 }
 
-.link1{
-    grid-column: 1/2;
-    grid-row: 1;
+.painting__grid {
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: repeat(1fr, 2);
+    max-width: 100px;
+    justify-self: center;
 }
 
-.link2{
-    grid-column: 2/3;
-    grid-row: 1;
+.pic1 {
+    grid-column: 1/4;
+    grid-row: 1/4;
 }
-.link3{
-    grid-column: 3/4;
-    grid-row: 1;
-}
-.link4{
-    grid-column: 1/2;
-    grid-row: 2;
-}
-.link5{
-    grid-column: 2/3;
-    grid-row: 2;
-}
-.link6{
-    grid-column: 3/4;
+
+.link1 {
+    grid-column: 2;
     grid-row: 2;
 }
 
+.painting__item--1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.pic2 {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.link2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.painting__item--2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.pic3 {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.link3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.painting__item--3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.pic4 {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.link4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.painting__item--4 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.pic5 {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.link5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.painting__item--5 {
+    grid-column: 2;
+    grid-row: 2;
+}
 
 
+.pic6 {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.link6 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.painting__item--6 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+.footer {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.footer img {
+    display: block;
+    padding: 5px;
+}
+
+.DAOlogo {
+    display: flex;
+    justify-content: center;
+}
+
+.DAOlogo-img {
+    margin: 32px auto 32px auto;
+}
 
 .footer-ul-1 {
     list-style: none;
@@ -242,7 +384,6 @@ header .wrapper {
     gap: 20px;
     margin-bottom: 32px;
 }
-
 
 
 .footer-ul-1 a {
@@ -260,4 +401,118 @@ header .wrapper {
     justify-content: center;
     margin: 0;
     gap: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .header-btn-bm {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .br {
+        display: none;
+    }
+
+    .DAOpaper-content {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .DAOpaper-card {
+        width: 361px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .DAOpaper p {
+        flex-grow: 1;
+    }
+
+    .DAOpaper-card h3 {
+        margin: 20px 0 0 0;
+
+    }
+
+    .DAOpaper-card1 h3 {
+        margin-top: 14px;
+    }
+
+    .DAOpaper-card1 {
+        padding-top: 0;
+    }
+
+    .DAOpaper-card p {
+        margin: 12px 0 0 0;
+
+    }
+
+    .DAOpodcasts-content {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .DAOpodcasts-card {
+        width: 361px;
+        margin: 0;
+
+    }
+
+    .DAOpaper-h2,
+    .DAOpaper-p {
+        display: none;
+    }
+
+    .DAOpodcasts-h2,
+    .DAOpodcast-p {
+        display: none;
+    }
+
+    .DAOpaper-media {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .DAOpaper {
+        margin-bottom: 100px;
+    }
+
+    .DAOpodcasts-media {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .DAOpodcasts {
+        margin-bottom: 200px;
+    }
+
+    .DAOlogo-img {
+        margin: 0;
+    }
+
+    .footer-ul-1 {
+        margin: 0;
+        gap: 36px;
+        align-self: center;
+    }
+
+    .footer-ul-2 {
+        margin: 0;
+        gap: 12px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer {
+        padding: 20px;
+    }
 }
