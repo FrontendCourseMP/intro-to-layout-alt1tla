@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/stylesform.css" />
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="#" title="Superdao" class="header-logo"><img src="public/images/logo.svg" alt="Logo Superdao"></a>
+            <button class="header-btn-bm"><img src="public/images/bgm.svg" alt="burger_menu"></button>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li><a class="navigation__item" href="#">Product</a></li>
+                    <li><a class="navigation__item" href="#">Use cases</a></li>
+                    <li><a class="navigation__item" href="#">Learn</a></li>
+                    <li><a class="navigation__item" href="#">About</a></li>
+                    <li><a class="navigation__item" href="#">Jobs</a></li>
+                </ul>
+                <a class="navigation__btn" href="#">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="wrapper">
+        <form class="form" action="//httpbin.org/post" method="post">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Sign up</legend>
+                <div class="form__list">
+                    <label class="form__label form__label--1">Name<br>(required)</br></label>
+                    <input class="form__input form__input--1" type="text" placeholder="Veronika" required name="personal_data">
+                    <label class="form__label form__label--2">Birthdate<br>(required)</br></label>
+                    <input class="form__input form__input--2" type="date" required name="personal_data">
+                    <label class="form__label form__label--3">Gender</label>
+                    <input class="form__input form__input--3" type="text" placeholder="Female" name="personal_data">
+                    <label class="form__label form__label--4">Password<br>(required)</br></label>
+                    <input class="form__input form__input--4" type="password" placeholder="********" required name="personal_data">
+                    <label class="form__label form__label--5">Email<br>(required)</br></label>
+                    <input class="form__input form__input--5" type="email" placeholder="Example@exmp.le" required name="contact_information">
+                    <label class="form__label form__label--6">Number<br>(required)</br></label>
+                    <input class="form__input form__input--6" type="tel" placeholder="8(888)-888-88-88" required name="contact_information">
+                    <label class="form__label form__label--7">Time</label>
+                    <input class="form__input form__input--7" type="text" placeholder="Morning" name="personal_data">
+                </div>
+                <div class="form__btns">
+                    <button class="form__btn" type="reset">reset</button>
+                    <button class="form__btn" type="submit">send</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content wrapper">
+            <a class="DAOlogo" href="#" title="Superdao"><img class="DAOlogo-img" src="public/images/logo.svg"
+                    alt="Superdao logo"></a>
+            <ul class="footer-ul-1">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+            <ul class="footer-ul-2">
+                <li><a href="#"><img src="public/images/footer/frametw.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img src="public/images/footer/frametg.svg" alt="Telegram"></a></li>
+                <li><a href="#"><img src="public/images/footer/frameyt.svg" alt="YouTube"></a></li>
+                <li><a href="#"><img src="public/images/footer/frameds.svg" alt="Discord"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+html,
+body {
+    height: 100%;
+}
+
+body>footer {
+    position: sticky;
+    top: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 80rem;
+    /* 65ch - удобоворимое кол-во символов на строке; */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --h-text-color: #FFF;
+    --button-color: #FFCF01;
+    --button-text-color: black;
+    --background-color: #0A1117;
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--h-text-color);
+    font-size: 1.8rem;
+    background-color: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--background-color);
+    padding: 16px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.header-btn-bm {
+    color: #FFA903;
+    background-color: var(--background-color);
+    border: none;
+}
+
+
+header img {
+    display: block;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    padding: 0;
+    display: none;
+    flex-direction: row;
+    gap: 128px;
+}
+
+.navigation__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 24px;
+    margin: 0;
+    max-height: max-content;
+    align-self: center;
+}
+
+.navigation__btn {
+    max-height: max-content;
+    align-self: center;
+    color: white;
+    background-color: #243241;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navigation__item {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+.form {
+    margin: 0;
+    padding: 0;
+}
+
+.form__fieldset {
+    border-style: dashed;
+    border-color: #FFA903;
+}
+
+.form__legend {
+    font-size: 3rem;
+}
+
+.form__list{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(1fr,14);
+    grid-row-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.form__btns{
+    display: flex;
+    justify-content: space-between;
+}
+.form__btn{
+    background: #FFA903;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 5px 16px 5px 16px;
+    margin-top: 20px;
+    color: #FFF;
+}
+
+.form__label{
+    font-size: 2rem;
+
+}
+
+.form__input {
+    color: black;
+    font-size: 2rem;
+}
+
+.form__label--1{
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.form__input--1{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.form__label--2{
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.form__input--2{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.form__label--3{
+    grid-column: 1;
+    grid-row: 5/7;
+}
+
+.form__input--3{
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.form__label--4{
+    grid-column: 1;
+    grid-row: 7/9;
+}
+
+.form__input--4{
+    grid-column: 2;
+    grid-row: 8;
+}
+
+.form__label--5{
+    grid-column: 1;
+    grid-row: 9/11;
+}
+
+.form__input--5{
+    grid-column: 2;
+    grid-row: 10;
+}
+
+.form__label--6{
+    grid-column: 1;
+    grid-row: 11/13;
+}
+
+.form__input--6{
+    grid-column: 2;
+    grid-row: 12;
+}
+
+.form__label--7{
+    grid-column: 1;
+    grid-row: 13/15;
+}
+
+.form__input--7{
+    grid-column: 2;
+    grid-row: 14;
+}
+
+
+.footer {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.footer img {
+    display: block;
+    padding: 5px;
+}
+
+.DAOlogo {
+    display: flex;
+    justify-content: center;
+}
+
+.DAOlogo-img {
+    margin: 32px auto 32px auto;
+}
+
+.footer-ul-1 {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+
+.footer-ul-1 a {
+    color: var(--h-text-color);
+}
+
+.footer-ul-2 {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    gap: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .header-btn-bm {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .br {
+        display: none;
+    }
+
+    .DAOpaper-content {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .DAOpaper-card {
+        width: 361px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .DAOpaper p {
+        flex-grow: 1;
+    }
+
+    .DAOpaper-card h3 {
+        margin: 20px 0 0 0;
+
+    }
+
+    .DAOpaper-card1 h3 {
+        margin-top: 14px;
+    }
+
+    .DAOpaper-card1 {
+        padding-top: 0;
+    }
+
+    .DAOpaper-card p {
+        margin: 12px 0 0 0;
+
+    }
+
+    .DAOpodcasts-content {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .DAOpodcasts-card {
+        width: 361px;
+        margin: 0;
+
+    }
+
+    .DAOpaper-h2,
+    .DAOpaper-p {
+        display: none;
+    }
+
+    .DAOpodcasts-h2,
+    .DAOpodcast-p {
+        display: none;
+    }
+
+    .DAOpaper-media {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .DAOpaper {
+        margin-bottom: 100px;
+    }
+
+    .DAOpodcasts-media {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .DAOpodcasts {
+        margin-bottom: 200px;
+    }
+
+    .DAOlogo-img {
+        margin: 0;
+    }
+
+    .footer-ul-1 {
+        margin: 0;
+        gap: 36px;
+        align-self: center;
+    }
+
+    .footer-ul-2 {
+        margin: 0;
+        gap: 12px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+}
