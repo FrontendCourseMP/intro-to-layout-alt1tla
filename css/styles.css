@@ -455,13 +455,20 @@ footer {
     margin: 0px 30px 22px 30px;
 }
 
+.forma{
+    display: flex;
+    justify-content: center;
+}
+
 .DAOform {
     border-radius: 2.2rem;
     border: 0.1rem solid #2A3744;
     background: #14212D;
     text-align: center;
     margin: 0px 16px 80px 16px;
+    max-width:400px;
 }
+
 
 .DAOform-form {
     padding-top: 28px;
@@ -472,12 +479,14 @@ footer {
     margin: 0px auto 8px auto;
 }
 
-.DAOform input {
+.inputik {
     margin: 24px auto 16px auto;
     border-radius: 10px;
     border: 1px solid #2A3744;
     background: #121E28;
-    width: 279px;
+    max-width: 279px;
+    margin-left:25px;
+    margin-right:25px;
     padding: 13px 18px 13px 18px;
     color: var(--h-text-color)
 }
@@ -488,12 +497,13 @@ footer {
 }
 
 .DAOform-submit {
+    max-width: 279px;
     border-radius: 1rem;
     background-color: #E2C1F9;
     color: #10151A;
     padding: 10px;
     margin-bottom: 0px;
-
+    width: 100%;
 }
 
 .DAOsponsors {
@@ -711,6 +721,28 @@ footer {
 
     .br {
         display: none;
+    }
+
+    .DAOform{
+        max-width: none;
+        width: 736px;
+    }
+
+    .RWD{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    } 
+
+    .knopka{
+        height: max-content;
+        align-self: center;
+        max-width: 150px;
+    }
+
+    .inputik{
+        max-width: none;
+        width: 500px;
     }
 
     .DAOpaper-content {
