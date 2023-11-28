@@ -26,57 +26,57 @@
             </nav>
         </div>
     </header>
-
-    <section class="wrapper">
-        <form class="form" action="//httpbin.org/post" method="post">
-            <fieldset class="form__fieldset">
-                <legend class="form__legend">Sign up</legend>
-                <div class="form__derection">
-                    <fieldset class="form__fieldset--2">
-                        <legend class="form__legend--2">Personal data</legend>
-                            <div class="form__personal">
-                                <label for="i1" class="form__label ">Name (required)</label>
-                                <input id="i1" class="form__input inputik" type="text" placeholder="Veronika" required name="Name">
-                                <label for="i2" class="form__label ">Birthdate (required)</label>
-                                <input id="i2" class="form__input inputik" type="date" required name="Birthdate">
-                                <fieldset class="form__fieldset--3">
-                                    <legend class="form__legend--3">Gender</legend>
-                                    <div class="form__radio">
-                                        <lable><input class="form__input " type="radio" checked name="Female">Female</lable>
-                                        <lable><input class="form__input " type="radio" name="Male">Male</lable>
-                                    </div>
-                                </fieldset>
-                                <label for="i4" class="form__label ">Password (required)</label>
-                                <input id="i4" class="form__input " type="password" placeholder="********" required name="password">
-                            </div>
-                    </fieldset>
-                    <fieldset class="form__fieldset--2">
-                        <legend class="form__legend--2">Contact info</legend>
-                            <div class="form__contact">
-                                <label for="i5" class="form__label ">Email (required)</label>
-                                <input id="i5" class="form__input inputik" type="email" placeholder="Example@exmp.le" required name="email">
-                                <label for="i6" class="form__label ">Number (required)</label>
-                                <input id="i6" class="form__input inputik" type="tel" placeholder="8(888)-888-88-88" required name="tel">
-                                <fieldset class="form__fieldset--4">
-                                    <legend class="form__legend--4">Time when we can call</legend>
-                                    <div class="form__checkbox">
-                                        <lable><input class="form__input " type="checkbox" checked name="morning">morning</lable>
-                                        <lable><input class="form__input " type="checkbox" name="day">day</lable>
-                                        <lable><input class="form__input " type="checkbox" name="evening">evening</lable>
-                                        <lable><input class="form__input " type="checkbox" name="night">night</lable>
-                                    </div>
-                                </fieldset>
-                            </div>
-                    </fieldset> 
-                </div>
-                <div class="form__btns">
-                    <button class="form__btn" type="reset">reset</button>
-                    <button class="form__btn" type="submit">send</button>
-                </div>
-            </fieldset>
-        </form>
-    </section>
-
+    <body>
+        <section class="wrapper">
+            <form class="form" action="//httpbin.org/post" method="post">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Sign up</legend>
+                    <div class="form__derection">
+                        <fieldset class="form__fieldset--2">
+                            <legend class="form__legend--2">Personal data</legend>
+                                <div class="form__personal">
+                                    <label for="i1" class="form__label ">Name (required)</label>
+                                    <input id="i1" class="form__input inputik" type="text" placeholder="Veronika" required name="Name">
+                                    <label for="i2" class="form__label ">Birthdate (required)</label>
+                                    <input id="i2" class="form__input inputik" type="date" required name="Birthdate">
+                                    <fieldset class="form__fieldset--3">
+                                        <legend class="form__legend--3">Gender</legend>
+                                        <div class="form__radio">
+                                            <label><input class="form__input " type="radio" checked name="Gender" value="Female">Female</label>
+                                            <label><input class="form__input " type="radio" name="Gender" value="Male">Male</label>
+                                        </div>
+                                    </fieldset>
+                                    <label for="i4" class="form__label ">Password (required)</label>
+                                    <input id="i4" class="form__input " type="password" placeholder="********" required name="password">
+                                </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset--2">
+                            <legend class="form__legend--2">Contact info</legend>
+                                <div class="form__contact">
+                                    <label for="i5" class="form__label ">Email (required)</label>
+                                    <input id="i5" class="form__input inputik" type="email" placeholder="Example@exmp.le" required name="email">
+                                    <label for="i6" class="form__label ">Number (required)</label>
+                                    <input id="i6" class="form__input inputik" type="tel" placeholder="8(888)-888-88-88" required name="tel">
+                                    <fieldset class="form__fieldset--4">
+                                        <legend class="form__legend--4">Time when we can call</legend>
+                                        <div class="form__checkbox">
+                                            <label><input class="form__input " type="checkbox" checked name="timetocall" value="morning">morning</label>
+                                            <label><input class="form__input " type="checkbox" name="timetocall" value="day">day</label>
+                                            <label><input class="form__input " type="checkbox" name="timetocall" value="evening">evening</label>
+                                            <label><input class="form__input " type="checkbox" name="timetocall" value="night">night</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                        </fieldset> 
+                    </div>
+                    <div class="form__btns">
+                        <button class="form__btn" type="reset">reset</button>
+                        <button class="form__btn" type="submit">send</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </body>
     <footer class="footer">
         <div class="footer-content wrapper">
             <a class="DAOlogo" href="#" title="Superdao"><img class="DAOlogo-img" src="public/images/logo.svg"
