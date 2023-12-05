@@ -38,12 +38,21 @@
     padding: 0 1rem;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-margin-top: 68px;
+}
+
 :root {
     --h-text-color: #FFF;
     --button-color: #FFCF01;
     --button-text-color: black;
     --background-color: #0A1117;
     font-size: 62.5%;
+}
+
+::selection{
+    color: #FFCF01;
 }
 
 body {
@@ -166,6 +175,18 @@ footer {
     color: white;
     font-size: 1.6rem;
     font-weight: 600;
+}
+
+.navigation__item:hover{
+    color : #FFCF01;
+}
+
+.navigation__item:active{
+    color : #FFCF01;
+}
+
+.navigation__item:focus{
+    color:#e2c1f9;
 }
 
 .welcomepage {
@@ -453,6 +474,10 @@ footer {
     flex-wrap: wrap-reverse;
     justify-content: center;
     margin: 0px 30px 22px 30px;
+}
+
+.inputik::selection{
+    color:#e2c1f9;
 }
 
 .forma{
