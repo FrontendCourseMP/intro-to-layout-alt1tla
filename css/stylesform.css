@@ -358,7 +358,7 @@ input[type="checkbox"] {
     }
     
     .DAOlogo{
-        transform: rotate(-30deg) scale(150%) skewX(30deg) skewY(-30deg);
+        transform: rotate(-30deg) scale(150%) skewX(10deg) skewY(25deg);
     }
 
 }
