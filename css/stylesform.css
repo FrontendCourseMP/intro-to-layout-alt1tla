@@ -151,8 +151,9 @@ header .wrapper {
 }
 
 input[type="radio"],
-input[type="checkbox"] {
+input[type="checkbox"]{
     accent-color: #FFA903;
+    
 }
 
 .form__btns{
@@ -244,6 +245,58 @@ input[type="checkbox"] {
     gap: 20px;
 }
 
+input:focus{ 
+    outline: 1;
+    outline-color: #FFA903;
+    outline-style: groove;
+}
+
+
+
+input:required{
+    border-color: white;
+    border-style: solid;
+}
+
+dl {
+    font-size: 2.5rem;
+}
+
+dt::first-letter {
+    font-size: 5rem;
+    color: #FFA903;
+}
+
+dt:nth-of-type(2n) {
+    font-style: italic;
+}
+
+dt:nth-of-type(2n+1) {
+    color: #FFCF01;
+}
+
+dd::before {
+    content: '🛈 ';
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+  
+li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+ul {
+    margin-bottom: 2rem;
+}
+
+ul li input:checked + label {
+  text-decoration: line-through;
+}
 
 @media (min-width: 768px) {
     .header-btn-bm {
@@ -256,81 +309,6 @@ input[type="checkbox"] {
 
     .br {
         display: none;
-    }
-
-    .DAOpaper-content {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .DAOpaper-card {
-        width: 361px;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .DAOpaper p {
-        flex-grow: 1;
-    }
-
-    .DAOpaper-card h3 {
-        margin: 20px 0 0 0;
-
-    }
-
-    .DAOpaper-card1 h3 {
-        margin-top: 14px;
-    }
-
-    .DAOpaper-card1 {
-        padding-top: 0;
-    }
-
-    .DAOpaper-card p {
-        margin: 12px 0 0 0;
-
-    }
-
-    .DAOpodcasts-content {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .DAOpodcasts-card {
-        width: 361px;
-        margin: 0;
-
-    }
-
-    .DAOpaper-h2,
-    .DAOpaper-p {
-        display: none;
-    }
-
-    .DAOpodcasts-h2,
-    .DAOpodcast-p {
-        display: none;
-    }
-
-    .DAOpaper-media {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .DAOpaper {
-        margin-bottom: 100px;
-    }
-
-    .DAOpodcasts-media {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .DAOpodcasts {
-        margin-bottom: 200px;
     }
 
     .DAOlogo-img {
