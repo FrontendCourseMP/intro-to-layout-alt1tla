@@ -1,3 +1,29 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    color: #18191c;
+    background: #FFA903;
+    transform: translateY(-100%);
+}
+
+.skip-link:focus {
+transform: translateY(20%);
+}
 /* fonts */
 
 @font-face {
@@ -214,6 +240,11 @@ footer {
     padding: 8px 28px;
 }
 
+.welcomepage-btn:hover{
+    transition: transform 0.2s;
+    transform: scale(1.2,1.2);
+}
+
 .DAOservice {
     padding: 0;
     margin-bottom: 68px;
@@ -326,7 +357,7 @@ footer {
 .DAOjourney a:hover {
     display: block;
     transition: transform 0.5s;
-    transform: scale(150%);
+    transform: scale(1.5, 1.5);
     color: #23C9DE;
 }
 
@@ -389,7 +420,7 @@ footer {
     transition: background-color 1s;
     transition: color 0.2s;
     transition: transform 0.5s;
-    transform: scale(120%);
+    transform: scale(1.2, 1.2);
     background-color: #FFC803;
     color: white ;                                                              
     border-radius: 30px;
@@ -442,6 +473,15 @@ footer {
 
 .DAOpartners-ul a {
     color: var(--h-text-color);
+}
+
+.DAOpartners-a:hover img {
+    transition: transform 1s;
+    transform: scale(1.1,1.1);
+}
+
+.DAOpartners-a:hover{
+    color:#FFCF01;
 }
 
 .DAOpartners img {
@@ -798,6 +838,10 @@ footer {
     justify-content: center;
     margin: 0;
     gap: 20px;
+}
+
+.footer-ul-1 a:hover{
+    color : #FFCF01;
 }
 
 @media (min-width: 768px) {
