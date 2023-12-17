@@ -438,7 +438,6 @@ footer {
     list-style: none;
     font-size: 1.2rem;
     font-weight: 600;
-
 }
 
 .DAOpartners-ul a {
@@ -543,6 +542,7 @@ footer {
     width: 100%;
 }
 
+
 .DAOsponsors {
     padding: 0;
     /* overflow-x:scroll; */
@@ -554,20 +554,73 @@ footer {
     margin: 8px 8px;
 }
 
-.DAOsponsors-wrap {
-    overflow-x: hidden;
+.DAOsponsors .wrapper{
+    max-width: 120rem;
 }
 
-.DAOsponsors-1line {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
-.DAOsponsors-2line {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+.logos{
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: var(--background-color);
+    padding: 30px 0;
+    position: relative;
+}
+
+.logos::before,
+.logos::after{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos::before{
+    left: 0;
+    background:linear-gradient(to left, rgba(255,255,255,0),var(--background-color));
+}
+
+.logos::after{
+    right: 0;
+    background:linear-gradient(to right, rgba(255,255,255,0),var(--background-color));
+}
+
+/* .logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+
+.logos:hover .logos-slide--2{
+    animation-play-state: paused;
+} */
+
+.logos-slide {
+    display: inline-block;
+    animation: 10s slide linear infinite;
+}
+
+.logos-slide--2 {
+    display: inline-block;
+    animation: 8s slide linear infinite;
+}
+
+.logos-slide img{
+    margin: 0 10px;
+    height: 60px;
+}
+
+.logos-slide--2 img{
+    margin: 0 10px;
+    height: 45px;
 }
 
 .DAOpaper-media {
@@ -782,6 +835,46 @@ footer {
         width: 500px;
     }
 
+    .DAOpartners-ul {
+        gap:20px;
+    }
+    
+    .DAOpartners-ul li {
+        align-items: center;
+        font-size: 1.6rem;
+    }
+    
+    .DAOpartners img {
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    .logos::before,
+    .logos::after{
+        width: 250px;
+    }
+
+    .logos-slide {
+        display: inline-block;
+        animation: 15s slide linear infinite;
+    }
+    
+    .logos-slide--2 {
+        display: inline-block;
+        animation: 10.5s slide linear infinite;
+    }
+
+    .logos-slide img{
+        margin: 0 20px;
+        height: 130px;
+    }
+
+    .logos-slide--2 img{
+        margin: 0 20px;
+        height: 115px;
+    }
+
     .DAOpaper-content {
         display: flex;
         flex-direction: row;
@@ -865,6 +958,7 @@ footer {
     }
 
     .footer-ul-2 {
+        align-items: center;
         margin: 0;
         gap: 12px;
     }
