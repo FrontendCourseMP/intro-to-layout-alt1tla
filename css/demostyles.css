@@ -274,7 +274,7 @@ footer {
 
 @keyframes slide{
     from{
-        transform: translateX(0);
+        transform: translateX(100%);
     }
     to {
         transform: translateX(-100%);
@@ -318,13 +318,13 @@ footer {
 }
 
 .logos-slide {
-    display: inline-block;
-    animation: 5s slide linear infinite;
+    display: flex;
+    animation:10s slide linear infinite;
 }
 
 .logos-slide--2 {
     display: inline-block;
-    animation: 3.5s slide linear infinite;
+    animation: 9s slide linear infinite;
 }
 
 .logos-slide img{
