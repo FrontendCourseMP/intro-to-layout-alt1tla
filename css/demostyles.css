@@ -228,7 +228,6 @@ footer {
     position: absolute;
     width: 20rem;
     height: 20rem;
-    position: absolute;
     backface-visibility:hidden;
 }
 
@@ -236,7 +235,6 @@ footer {
     position: absolute;
     width: 20rem;
     height: 20rem;
-    position: absolute;
     backface-visibility:hidden;
     transform: rotateY(180deg);
 }
